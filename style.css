@@ -1,15 +1,21 @@
+
+body{
+    background-color: black;
+}
 .loadbar{
+    display: flex;
+    overflow: hidden;
     width: 1500px;
     height: 154px;
     background-color: white;
     border: 1px solid black;
 }
-#load{
+.load1{
     animation-name: load;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    height: 148px;
+    height: 153px;
     background-color: green;
     resize:none;
     left: 0;
@@ -25,15 +31,16 @@
         width: 1500px;
     }
 }
-#load2{
-    animation-name: load;
-    animation-duration: 240s;
+.load2{
+    animation-name: crushthem;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    height: 150px;
-    background-color: green;
+    height: 153px;
+    background-color: rgb(235, 5, 162);
     resize:none;
-    left: 0;
+    left: 1500px;
+    top: 0;
 }
 .loadbar2{
     position: absolute;
@@ -42,4 +49,149 @@
     background-color: white;
     border: 1px solid black;
     top: 500px;
+    display: flex;
+    overflow: hidden;
+}
+@keyframes crushthem {
+    0%{
+        width: 1500px;
+    }
+    50%{
+        width: 750px;
+    }
+    100%{
+        width: 0px;
+    }
+}
+.load3{
+    animation-name: crushthem;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    height: 153px;
+    background-color: rgb(122, 17, 154);
+    resize:none;
+    left: 0;
+}
+.load4{
+    animation-name: load;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    height: 153px;
+    background-color: rgb(9, 242, 184);
+    resize:none;
+    left: 0;
+}
+.eye{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: white;
+    border: 2px solid black;
+    top: 225px;
+    left: 450px;
+    align-items: center;
+}
+.eye2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: white;
+    border: 2px solid black;
+    top: 225px;
+    left: 775px;
+    align-items: center;
+}
+.close{
+    width:100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgb(27, 142, 213);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    animation-name: rolleyes;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+.pupil{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: black;
+    position:absolute;
+    left: 3px;
+    top: 4px;
+}
+@keyframes rolleyes {
+    0%{
+       top: 15px;
+       left: 12px;
+    }
+    20%{
+        top: 5px;
+        left: 50px;
+        
+    }
+    40%{
+        left: 95px;
+        top: 35px;
+    }
+    60%{
+        left: 50px;
+        top: 95px;
+    }
+    80%{
+        left: 5px;
+        top: 45px;
+    }
+    100%{
+        left: 12px;
+        top: 15px;
+    }
+
+}
+.iris{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    animation-name: rolliris;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes rolliris {
+    0%{
+       top: 15px;
+       left: 12px;
+    }
+    20%{
+        top: 5px;
+        left: 50px;
+        
+    }
+    40%{
+        left:75px;
+        top: 35px;
+    }
+    60%{
+        left: 50px;
+        top: 70px;
+    }
+    80%{
+        left: 5px;
+        top: 45px;
+    }
+    100%{
+        left: 12px;
+        top: 15px;
+    }
+
 }
