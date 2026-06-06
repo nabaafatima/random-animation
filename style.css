@@ -1,0 +1,45 @@
+.loadbar{
+    width: 1500px;
+    height: 154px;
+    background-color: white;
+    border: 1px solid black;
+}
+#load{
+    animation-name: load;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    height: 148px;
+    background-color: green;
+    resize:none;
+    left: 0;
+}
+@keyframes load {
+    0%{
+        width: 0px;
+    }
+    50%{
+        width: 750px;
+    }
+    100%{
+        width: 1500px;
+    }
+}
+#load2{
+    animation-name: load;
+    animation-duration: 240s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    height: 150px;
+    background-color: green;
+    resize:none;
+    left: 0;
+}
+.loadbar2{
+    position: absolute;
+    width: 1500px;
+    height: 154px;
+    background-color: white;
+    border: 1px solid black;
+    top: 500px;
+}
