@@ -250,37 +250,26 @@ body{
         transform: rotate(0deg);
     }
 }
-#box2{
-    animation: d;
-    animation-delay: 2s;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    width: 200px;
-    height: 200px;
+#f{
+    content: 🍓;
     position: absolute;
-    left: 400px;
-    top: 700px;
-    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    animation-name: size;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
-@keyframes d {
+@keyframes size{
     0%{
-        left: 400px;
-        top: 700px;
-    }
-    25%{
-        left: 800px;
-        top: 700px;
+        font-size: 10rem;
     }
     50%{
-        left: 800px;
-        top: 1100px;
-    }
-    75%{
-        left: 400px;
-        top: 1100px;
+        font-size: 20rem;
     }
     100%{
-        left: 400px;
-        top: 700px;
+        font-size: 10rem;
     }
 }
