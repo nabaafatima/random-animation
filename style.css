@@ -195,3 +195,92 @@ body{
     }
 
 }
+#box{
+    height: 200px;
+    width: 200px;
+    background-color:rgb(255, 0, 208);
+    position: absolute;
+    left: 50px;
+    top:800px;
+    animation-name: changeradius;
+    animation-duration: 5s;
+    animation-delay : 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes changeradius {
+    0%{
+        border-radius: 0%;
+    }
+    50%{
+        border-radius: 50%;
+    }
+    100%{
+       border-radius: 0%;
+    }
+}
+.rain{
+    width: 400px;
+    height: 400px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 700px;
+    left: 50px;
+    gap: 35px;
+}
+.raindrops{
+    height: 200px;
+    width: 200px;
+    border-radius: 0% 100% 100% 100%;
+    background-color:aqua;
+    animation-name: c;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+@keyframes c {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+#box2{
+    animation: d;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 400px;
+    top: 700px;
+    background-color: blueviolet;
+}
+@keyframes d {
+    0%{
+        left: 400px;
+        top: 700px;
+    }
+    25%{
+        left: 800px;
+        top: 700px;
+    }
+    50%{
+        left: 800px;
+        top: 1100px;
+    }
+    75%{
+        left: 400px;
+        top: 1100px;
+    }
+    100%{
+        left: 400px;
+        top: 700px;
+    }
+}
