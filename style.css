@@ -362,3 +362,18 @@ body{
 #button:hover{
     box-shadow: 15px 15px 0 rgb(188, 62, 169), 0 8px 15px rgba(0, 0, 0, 0.3);
 }
+#text{
+    height: 100px;
+    width: 700px;
+    display: flex;
+    font-size: 2rem;
+    font-family: "Mynerve";
+    background-color: blanchedalmond;
+    border: 2px solid rgb(188, 62, 169);
+    border-radius: 20px;
+    position: absolute;
+    top: 1050px;
+    left: 500px;
+    color: black;
+    resize: none;
+}
