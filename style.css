@@ -489,3 +489,20 @@ body{
         filter: brightness(1);
     }
 }
+#relaxing-btn{
+    width: 150px;
+    height: 150px;
+    border-radius: 2px;
+    border: 2px solid pink;
+    background-color: beige;
+    font-family: "Mynerve";
+    position: absolute;
+    top: 1000px;
+    left: 100px;
+    box-shadow: 15px 15px 15px rgba(231, 205, 205, 0.472);
+    transition: all 0.3s ease;
+}
+#relaxing-btn:active {
+  transform: scale(1.25);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
