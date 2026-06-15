@@ -11,4 +11,13 @@ hello.addEventListener("click",()=>{
 const remove = document.getElementById("reset");
 remove.addEventListener("click",()=>{
     area.textContent = "";
-})
+});
+const emoji = document.getElementById("one");
+emoji.addEventListener("click", ()=>{
+    if(area.textContent === "") {
+        area.textContent = "😆";
+    } else {
+        let e = area.textContent;
+        area.textContent = e + "😆";
+    }
+});
