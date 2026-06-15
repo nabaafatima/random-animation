@@ -362,7 +362,7 @@ body{
 #reset:active{
     transform: scale(0.95);
 }
-#reser:hover{
+#reset:hover{
     box-shadow: 15px 15px 0 rgb(188, 62, 169), 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 #button:hover{
