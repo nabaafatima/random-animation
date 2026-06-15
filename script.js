@@ -21,3 +21,12 @@ emoji.addEventListener("click", ()=>{
         area.textContent = e + "😆";
     }
 });
+const bye = document.getElementById("bye");
+bye.addEventListener("click",()=>{
+    if(area.textContent === "") {
+        area.textContent = "Bye";
+    } else{
+        let b = area.textContent;
+        area.textContent = b + "bye";
+    };
+});
