@@ -388,10 +388,10 @@ body{
     height: 100px;
     border-radius: 20px;
     border: solid 1px;
-    background-color: bisque;
+    background-color: rgb(231, 130, 6);
     border-color:rgb(188, 62, 169);
     position: absolute;
-    left: 850px;
+    left: 1000px;
     top: 900px;
     transition: all 0.5 ease;
     font-family: "Mynerve";
@@ -409,7 +409,7 @@ body{
     background-color: bisque;
     border-color:rgb(188, 62, 169);
     position: absolute;
-    left: 1000px;
+    left: 850px;
     top: 900px;
     transition: all 0.5 ease;
     font-family: "Mynerve";
@@ -424,4 +424,28 @@ body{
 }
 #one:hover{
     box-shadow: 15px 15px 0 rgb(188, 62, 169), 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+#bye:active{
+    transform: scale(0.95);
+}
+#bye:hover{
+    box-shadow: 15px 15px 0 rgb(188, 62, 169), 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+#bye{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: solid 1px;
+    background-color: bisque;
+    border-color:rgb(188, 62, 169);
+    position: absolute;
+    left: 550px;
+    top: 900px;
+    transition: all 0.5 ease;
+    font-family: "Mynerve";
+    font-size:2rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
