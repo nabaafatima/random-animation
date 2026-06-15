@@ -348,7 +348,7 @@ body{
     position: absolute;
     left: 700px;
     top: 900px;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
     font-family: "Mynerve";
     font-size:2rem;
     justify-content: center;
@@ -393,7 +393,7 @@ body{
     position: absolute;
     left: 1000px;
     top: 900px;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
     font-family: "Mynerve";
     font-size:2rem;
     justify-content: center;
@@ -411,7 +411,7 @@ body{
     position: absolute;
     left: 850px;
     top: 900px;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
     font-family: "Mynerve";
     font-size:2rem;
     justify-content: center;
@@ -505,4 +505,7 @@ body{
 #relaxing-btn:active {
   transform: scale(1.25);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#relaxing-btn:hover{
+    border: 20px solid pink;
 }
